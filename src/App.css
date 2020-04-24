@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Righteous', cursive;
 }
 
 .App-logo {
@@ -36,3 +37,62 @@
     transform: rotate(360deg);
   }
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 16px;
+  /* border-bottom: 2px solid #94E8BF; */
+  /* margin-bottom: 32px; */
+  background-color: #5E937A;
+  color: #BAFFDD;
+  /* background-color: red; */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #BAFFDD;
+  letter-spacing: 0.25rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 50%;
+  transition-duration: 350ms;
+  transition-property: transform, color;
+  transition-timing-function: cubic-bezier(1, 0.11, 0.55, 1.58);
+  z-index: 1;
+  width: 20%;
+}
+
+.nav-link:hover {
+  color: #FAF33E;
+  /* background-color: #5E937A; */
+  /* align-self: flex-end; */
+  transform: translateY(1.4rem);
+}
+
+.nav-header {
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+  font-weight: normal;
+  color: #FAF33E;
+  width: 20%;
+}
+
+#drop {
+  /* top: 5rem; */
+  width: 20rem;
+  position: absolute;
+  transform: scale(1, 0);
+  z-index: 0;
+  width: 22rem;
+  transition-duration: 500ms;
+  transition-property: transform, left, width, height, top;
+  transition-timing-function: cubic-bezier(1, 0.11, 0.55, 1.58);
+}
+
+#drop.active {
+
+  transform: scale(1, 1);
+
+}
+
