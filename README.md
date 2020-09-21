@@ -15,7 +15,7 @@ A simple mock-up of a navigation bar, created for a self-directed collaborative 
 ## How to use?
 ```
 npm i 
-
+-----
 npm start
 ```
 
